@@ -37,7 +37,7 @@ echo
 read -p "Do you want remove current AMD Drivers?(y/n)" -n 1 -r
 if [[ $REPLY =~ ^[Yy]$ ]]; then
 	echo
-	amdgpu-pro-uninstall
+	/usr/bin/amdgpu-pro-uninstall
 	apt-get -f install
 fi
 
